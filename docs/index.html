@@ -116,10 +116,22 @@
         <h2>Challenges and Innovations</h2>
         <p>Several key challenges shaped the development process and spurred innovation:</p>
         <ul>
-            <li><strong>Image Analysis:</strong> Integrating image-based nutritional analysis required uploading to Firebase, generating prompts for GPT-4o, and parsing JSON outputs. This process required multiple iterations to ensure accuracy.</li>
-            <li><strong>Map Integration:</strong> The team switched from Mapbox to Google Maps API due to integration bugs, leveraging the Nearby Places API and AI filtering to display relevant restaurants.</li>
-            <li><strong>React Native Components:</strong> Web elements like <code>&lt;div&gt;</code> needed to be replaced with native components like <code>&lt;View&gt;</code>, and issues like keyboard overlap required UI refactoring, leading to a stronger mobile-first mindset.</li>
+            <li>
+                <strong>Image Analysis:</strong> Integrating image-based nutritional analysis required uploading to Firebase, generating prompts for GPT-4o, and parsing JSON outputs. This process required multiple iterations to ensure accuracy.
+                <br><strong>Innovation:</strong> We developed a robust prompt engineering pipeline for GPT-4o, enabling the AI to accurately extract and format nutritional data from diverse meal images into structured JSON, significantly reducing manual data entry for users.
+            </li>
+            <li>
+                <strong>Map Integration:</strong> The team switched from Mapbox to Google Maps API due to integration bugs.
+                <br><strong>Innovation:</strong> We leveraged the Google Maps Nearby Places API in conjunction with AI-powered filtering (e.g., using GPT-4o to analyze restaurant descriptions and user preferences) to display highly relevant, personalized healthy dining options, moving beyond simple keyword searches.
+            </li>
+            <li>
+                <strong>React Native Components:</strong> Web elements like <code>&lt;div&gt;</code> needed to be replaced with native components like <code>&lt;View&gt;</code>, and issues like keyboard overlap required UI refactoring.
+                <br><strong>Innovation:</strong> We implemented a comprehensive mobile-first UI/UX strategy, utilizing KeyboardAvoidingView and dynamic ScrollView adjustments to ensure seamless keyboard interaction and a consistently intuitive native user experience across various devices and screen sizes.
+            </li>
         </ul>
+        <p>
+            These challenges led to the development of several unique technological and methodological approaches that distinguish NutriCast. Foremost among these is our deep integration of dual AI models (GPT-4o for core analysis/suggestions and Gemini for test case generation), a methodology that not only enhances product features but also significantly accelerates the development and testing lifecycle. Unlike traditional apps, NutriCast's AI-driven image-to-nutrition analysis removes manual logging barriers, and our AI-powered personalized restaurant recommendations offer a unique value proposition beyond standard mapping services. Our commitment to a true mobile-first UI/UX strategy, backed by robust React Native component management, further sets us apart in delivering a seamless and intuitive user experience.
+        </p>
     </section>
 
     <section>
